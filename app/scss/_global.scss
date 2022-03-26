@@ -27,3 +27,11 @@ body{
         margin: 0 auto;
     }
 }
+
+.title{
+    font-size: 36px;
+    line-height: 46px;
+    @extend %dm700;
+    color: $black;
+    text-align: center;
+}
