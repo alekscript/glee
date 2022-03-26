@@ -231,6 +231,7 @@
     width: 200px;
     background-color: #a3bbc8;
     position: relative;
+    line-height: 0;
     &::before{
         content: '';
         position: absolute;
@@ -280,5 +281,47 @@
         }
     }
 }
+
+.delivery{
+    background-color: #fef7f0;
+    padding: 40px 0;
+    .slider-top__delivery{
+        &-items{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        &-item{
+            max-width: 400px;
+            width: 100%;
+            padding-left: 140px;
+            background-position-y: 12px;
+            background-position-x: 60px ;
+            background-repeat: no-repeat;
+            &:nth-child(1){
+                background-image: url(../images/nav_icons/24to7.svg);
+            }
+            &:nth-child(2){
+                background-image: url(../images/nav_icons/delivery.svg);
+            }
+            &:nth-child(3){
+                background-image: url(../images/nav_icons/union.svg);
+            }
+        }
+        &-title{
+            font-size: 18px;
+            line-height: 40px;
+            color: $black;
+            @extend %dm700;
+        }
+        &-text{
+            color: #585858;
+            font-size: 16px;
+            line-height: 30px;
+            @extend %dm400;
+        }
+    }
+}
+
 
 @import 'media';
