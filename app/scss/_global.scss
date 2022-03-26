@@ -23,5 +23,15 @@ body{
     margin: 0 auto;
     &--big{
         max-width: 1770px;
+        padding: 0 15px;
+        margin: 0 auto;
     }
+}
+
+.title{
+    font-size: 36px;
+    line-height: 46px;
+    @extend %dm700;
+    color: $black;
+    text-align: center;
 }
