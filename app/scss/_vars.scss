@@ -28,3 +28,10 @@ $grey: #8b8b8b;
     font-weight: 700;
     font-style: normal;
 }
+
+.title{
+    font-size: 36px;
+    line-height: 24px;
+    color: #222933;
+    @extend %rubik400;
+}

@@ -503,4 +503,130 @@
     }
 }
 
+.breadcrumbs{
+    text-align: center;
+    padding: 30px 0;
+    background-color: #edf1f4;
+    &__list{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 24px;
+        @extend %rubik400;
+        color: #979ba0;
+        position: relative;
+        padding-right: 20px;
+    }
+    &__link::after{
+        position: absolute;
+        content: "/";
+        color: #979ba0;
+        top: 0;
+        right: 7px;
+    }
+    &__link:last-child{
+        padding-right: 0;
+        &::after{
+            display: none;
+        }
+    }
+}
+
+.modal{
+    padding: 120px 0;
+    max-width: 570px;
+    width: 100%;
+    margin: 0 auto;
+    &__label{
+        display: block;
+        font-size: 14px;
+        @extend %rubik400;
+        color: #436372;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    &__input{
+        margin-top: 10px;
+        display: block;
+        border: 1px solid #f6f6f6;
+        height: 60px;
+        padding: 10px 15px;
+        width: 100%;
+        color: #888c91;
+        font-size: 16px;
+    }
+    &__link{
+        display: block;
+        font-size: 14px;
+        color: #436372;
+        @extend %rubik400;
+    }
+    &__checkbox{
+        all: revert;
+        font-size: 14px;
+        color: #436372;
+        @extend %rubik400;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: flex-start;
+    }
+    &__form{
+        border-bottom: 1px solid #f6f6f6;
+        margin-bottom: 30px;
+    }
+}
+
+.modal-btn{
+    margin-top: 25px;
+    width: 100%;
+    background-color: #a3bbc8;
+    color: #fff;
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover{
+        background-color: #629ebe;
+    }
+}
+
+.modal{
+    &__register{
+        max-width: 570px;
+        width: 100%;
+        text-align: center;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        color: #436372;
+        @extend %rubik400;
+        margin-bottom: 20px;
+    }
+    &__register-link{
+        font-size: 18px;
+        @extend %rubik500;
+        color: #243f4d;
+        border: 1px solid #a3bbc8;
+        padding: 20px 30px;
+        width: 100%;
+        display: block;
+        transition: all .3s ease;
+        &:hover{
+            background-color: #a3bbc8;
+        }
+    }
+}
+
+
 @import 'media';
